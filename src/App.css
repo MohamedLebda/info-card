@@ -1,38 +1,169 @@
-.App {
-  text-align: center;
+/* global variables */
+:root {
+  --containerBgColor: #1a1b21;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* global rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 44px;
+  width: 317px;
+  margin: auto;
 }
-
-.App-link {
-  color: #61dafb;
+.App {
+  margin: 44px 0;
 }
+/* info */
+.info {
+  text-align: center;
+  background-color: var(--containerBgColor);
+}
+.info-text h1 {
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin-top: 21px;
+}
+.info-text h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.8px;
+  line-height: 15px;
+  text-align: center;
+  padding-top: 6px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  color: #f3bf99;
+}
+.info-text a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  text-decoration: none;
+  color: #f5f5f5;
+}
+.info .btns {
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+}
+.info .btns button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.email {
+  border: none;
+  padding: 10px 30px;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.email span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+
+  /* gray/700 */
+
+  color: #374151;
+}
+.linkedin {
+  border: none;
+  padding: 10px 20px;
+  background: #5093e2;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.linkedin span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.info .btns img {
+  margin-right: 10px;
+}
+/* About section */
+.about {
+  background-color: var(--containerBgColor);
+  padding: 33px 37px 0 35px;
+}
+.about h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #f5f5f5;
+}
+.about p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  color: #dcdcdc;
+}
+/* Interests section */
+.interests {
+  background-color: var(--containerBgColor);
+  padding: 33px 37px 40px 35px;
+}
+.interests h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #f5f5f5;
+}
+.interests p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  color: #dcdcdc;
+}
+/* Footer */
+footer {
+  background-color: #161619;
+  padding: 20px 0 20px 73px;
+  border-radius: 0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  -ms-border-radius: 0px 0px 10px 10px;
+  -o-border-radius: 0px 0px 10px 10px;
+}
+footer a {
+  margin-right: 24px;
 }
